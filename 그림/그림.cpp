@@ -8,13 +8,13 @@ int n, m;
 int board[502][502] = { 0, };
 int vis[502][502] = { 0, };
 int dx[] = { 1,0,-1,0 };
-int dy[] = { 0,1,0,-1 };  //íƒìƒ‰ ë°©í–¥ ì˜¤ ìœ„ ì™¼ ì•„ë˜
-queue<pair<int, int>> q;//BFS í
-vector<int> count_pic; //ê·¸ë¦¼ê°œìˆ˜ ë²¡í„°
+int dy[] = { 0,1,0,-1 };  //Å½»ö ¹æÇâ ¿À À§ ¿Ş ¾Æ·¡
+queue<pair<int, int>> q;//BFS Å¥
+vector<int> count_pic; //±×¸²°³¼ö º¤ÅÍ
 int w = 1;
 int nx, ny;
 void BFS(int x, int y) {
-	vis[y][x] = 1; //ë°©ë¬¸ í‘œì‹œ
+	vis[y][x] = 1; //¹æ¹® Ç¥½Ã
 	q.push(make_pair(y, x));
 	while (!q.empty()) {
 		x = q.front().first;
