@@ -60,6 +60,7 @@
     "*.embeddedhtml": "html",
     "iostream": "cpp",
     "utility": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "queue": "cpp"
   }
 }
