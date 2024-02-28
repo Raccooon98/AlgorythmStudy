@@ -35,7 +35,7 @@ int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
-	cin >> n >> m;
+	cin >> m >> n;
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			cin >> board[i][j];
@@ -44,18 +44,23 @@ int main() {
 		}
 	}
 	BFS();
-
+	/*for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			cout << board[i][j] << ' ';
+		}
+		cout << endl;
+	}*/
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			if (board[i][j] == 0) {
-				cout << 0;
+				cout << "-1"<<'\n';
 				return 0;
 			}
 			if (day < board[i][j])
 				day = board[i][j];
 		}
 	}
-	cout << day - 1 << '\n';//처음부터 안익은 토마토가 없는 경우에 0이 나와야하는데 1부터 시작하므로 1 빼주기
+	cout << day - 1 << '\n';//처음에 1부터 시작하므로 1 빼주기
 
 
 }
