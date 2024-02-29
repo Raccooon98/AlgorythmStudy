@@ -61,6 +61,7 @@
     "iostream": "cpp",
     "utility": "cpp",
     "algorithm": "cpp",
-    "queue": "cpp"
+    "queue": "cpp",
+    "xstring": "cpp"
   }
 }
