@@ -39,8 +39,10 @@ int main() {
 	for (auto &comb : result) {
 		sort(comb.begin(), comb.end());
 	}
+        // {2,1}->{1,2}...
 
-	// 중복 제거
+	// 중복 제거 unique는 인접한 중복값을 제거하는 함수이므로 먼저 한번더
+        // 정렬을 수행해 중복값들이 인접하게 만들어줌 
 	sort(result.begin(), result.end());
 	result.erase(unique(result.begin(), result.end()), result.end());
 
